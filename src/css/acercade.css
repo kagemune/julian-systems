@@ -1,0 +1,33 @@
+.acercade{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    height: 400px;
+    padding-left: 50px;
+}
+.imagenacercade{
+    position: relative;
+    
+}
+.imagenacercade img {
+    position: absolute;
+    height: 300px; 
+    top :50px;
+    left: 80px;
+}
+.cuadrado{
+    width: 250px;
+    height: 300px;
+    border:  solid #333 10px;
+}
+.contenidoacercade{
+    width: 50%;
+    padding-right: 100px;
+    color: #222;
+    text-align: justify;
+}
+.contenidoacercade h2{
+    color: var(--primary-fondcolor);
+}
+
+

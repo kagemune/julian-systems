@@ -1,0 +1,14 @@
+.experiencia{
+    background-image: url(../img/yakov_Daza_red_mother_board_8f5a53a7-da28-48a3-91d6-b4473c1a3e06.png);
+    height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+}
+.itemsExp{
+    color: #fff;
+    line-height: 200px;
+}

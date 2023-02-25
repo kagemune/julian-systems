@@ -1,0 +1,41 @@
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+.logo{
+    padding: 5px;
+    margin: 5px 5px;
+    
+}
+.lang{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-width: 10%;
+    gap: 5px;
+    padding: 0.7rem;
+    height: 40px;
+    margin: auto 5px auto ;
+}
+.banderita{
+    width: 40px;
+    height: 20px;
+
+}
+.menu{
+    list-style: none;
+}
+.menu a{
+    color: var(--primary-fondcolor);
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
