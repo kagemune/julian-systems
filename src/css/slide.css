@@ -24,7 +24,31 @@
     color: var(--principal-color);
     font-size: 52px;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1200px){
+    .presentacion {
+        width: 55%;
+        margin: 200px 20px 0 0px;
+        padding: 0;
+    }
+    .slider{
+        height: 500px;
+    }
+
+}
+@media only screen and (max-width: 821px){
+    .slider{
+        height: 300px;
+    }
+    .presentacion {
+        width: 55%;
+        margin: 50px 20px 0 0px;
+        padding: 0;
+    }
+    .presentacion h2{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 412px){
     .slider{
         display: none;
     }

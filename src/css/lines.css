@@ -7,8 +7,15 @@
     background-size: cover;
     display: flex;
     justify-content: space-evenly;
+    width: 100%;
+    max-width: 412px;
 }
 .itemsExp{
     color: #fff;
     line-height: 200px;
+}
+@media only screen and (max-width: 413px){
+    .itemsExp h2{
+        font-size: 16px;
+    }
 }

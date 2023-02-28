@@ -6,10 +6,10 @@ function IrArriba() {
 
     const toggleVisible = () => {
         const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300){
+        if (scrolled > 100){
             setVisible(true)
         } 
-        else if (scrolled <= 300){
+        else if (scrolled <= 100){
             setVisible(false)
         }
     };

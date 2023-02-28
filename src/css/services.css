@@ -69,4 +69,25 @@
         height: 400px;
     }
 }
+@media only screen and (max-width: 413px ){
+    body{
+        max-width: 412px;
+        box-sizing: border-box;
+    }
+    .cajaservicios img{
+        max-width: 768px;
+    }
+    .cajaservicios, .izq{
+        flex-direction: column;
+        max-width: 412px;
+        width: 100%;
+        height: 800px;
+        margin: 0;
+    }
+    .izq .image .cuadrado,.image .cuadrado{
+        position: absolute;
+        left: 30px;
+        top: 15px;
+    }
+}
 

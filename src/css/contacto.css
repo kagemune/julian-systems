@@ -38,6 +38,7 @@ h3{
 .asidecon{
     display: flex;
     justify-content: space-between;
+    margin: 15px ;
 }
 
 @media only screen and (max-width: 768px) {
@@ -65,5 +66,27 @@ h3{
         width: 100%;
         max-width: 768px;
         min-height: 600px;
+    }
+}
+@media only screen and (max-width: 413px){
+    .redes{
+        height: 1000px;
+    }
+    .asidecon{
+        flex-direction: column;
+    }
+    .tablaContacto{
+        width: 100%;
+    }
+    .qr{
+        max-width: 300px;
+        margin: auto;
+    }
+    .qr img{
+        width: 100%;
+        height: auto;
+    }
+    .mapa{
+        height:400px
     }
 }

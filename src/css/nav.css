@@ -39,3 +39,69 @@ ul{
     gap: 15px;
     margin-right: 20px;
 }
+
+@media only screen and (max-width: 413px){
+    ul{
+        display: none;
+    }
+    .visible{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position:absolute;
+        width: 100%;
+        height: 150px;
+        top: 75px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        padding-right: 50px;
+        z-index: 40;
+    }
+    .bars, .equis{
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        cursor: pointer;
+        display: flex;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+    }
+    
+    .bars span,.bars span::after,.bars span::before{
+        background-color: var(--primary-fondcolor);
+        width: 25px;
+        height: 2px;
+        transition: 0.5 ease all;
+    }
+    .bars span::after,.bars span::before,.equis span::after,.equis span::before{
+        position: relative;
+        content: "";
+        display: inline-block;
+    }
+    .bars span::before{
+        top: -20.5px;
+    }
+    .bars span::after{
+        top: -23px;
+    }
+    .equis span,.equis span::after,.equis span::before{
+        background-color: var(--primary-fondcolor);
+        width: 25px;
+        height: 2px;
+        transition: 0.3 ease;
+    }
+    .equis span{
+        background-color: transparent;
+    }
+    .equis span::before{
+        top: -13px;
+        transform: rotate(135deg);
+    }
+    .equis span::after{
+        transform: rotate(-135deg) ;
+        top: -32px;
+    }
+}

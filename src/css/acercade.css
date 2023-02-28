@@ -7,7 +7,7 @@
 }
 .imagenacercade{
     position: relative;
-    
+
 }
 .imagenacercade img {
     position: absolute;
@@ -29,5 +29,33 @@
 .contenidoacercade h2{
     color: var(--primary-fondcolor);
 }
+@media only screen and (max-width: 1200px){
+    .acercade{
+        height: 600px;
+    }
+}
+@media only screen and (max-width: 821px){
+    .contenidoacercade{
+        padding-right: 10px;
+    }
+    .acercade{
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 412px){
+    .acercade{
+        height: 900px;
+        flex-direction: column;
+        padding: 0 5%;
+        max-width: 412px;
+    }
+    .contenidoacercade{
+        margin-top: 60px;
+        width: 100%;
 
+    }
+
+    
+
+}
 
