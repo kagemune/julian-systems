@@ -1,45 +1,64 @@
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Slide from './components/Slide';
 import Services from './components/Services';
 import Contacto from './components/Contacto';
-import Acercade from './components/Acercade';
 import Lines from './components/Lines';
 import whatsappButton from './img/Whatsapp1.png'
-import IrArriba from './components/IrArriba';
 
 
 
-function App() {
+function App(){
 
-  
+  const [data, setData] = useState([{}])
+
+  useEffect(()=>{
+    fetch("/api").then(
+      res => res.json()
+    ).then(
+      dato =>{
+        setData(dato)
+        console.log(dato)
+      }
+    )},[]
+  )
+
+
   return (
+
     <div className="App">
-      <IrArriba/>
       <div className='contenido'>
-        <Navbar/> 
-        <Slide/>
+        <Navbar /> 
+        <Slide />
+        
         <div className='main'>
           <div className="aside">
-            <a href="https://wa.me/573172451292" target="_blank" rel="noreferrer"><img src={whatsappButton} alt="link wahtasapp" /></a>
+            <a href="wa.me/573197765744"><img src={whatsappButton} alt="link wahtasapp"/> </a>
           </div>
           <article>
-            <Acercade/>
             <h2>Servicios</h2>
-            <br />
-            <p>servicio de mantenimiento de dispositivos electrónicos especializados para garantizar el correcto funcionamiento y rendimiento de los dispositivos electrónicos, como PC, smartphones, laptops, videoconsolas, TV, audio, entre otros.</p>
-            <Services texto ="cajaservicios izq" />
-            <Services texto ="cajaservicios" />
-            <br />
-            <p>el servicio de mantenimiento de dispositivos electrónicos es una solución eficaz para prolongar la vida útil de los dispositivos y garantizar su correcto funcionamiento. Los proveedores de servicios ofrecen una amplia gama de servicios para satisfacer las necesidades individuales de cada usuario.</p>
-            <br />
+
+              {(typeof data ==='undefined')?(
+                <p className='loading'>cargando...</p>
+              ) : (
+                data.map((service, i) => (
+                  <p>
+                    <Services key={i} texto={(i % 2 === 0)?("cajaservicios"):("cajaservicios izq")} titulo={service[1]} descripcion={service[2]}/>
+                  </p>
+                ))
+              )}
+
             <Lines/>
             <Contacto/>
           </article>
         </div>
       </div>
     </div>
-  );
+  )
+
+
+
 }
 
 export default App;

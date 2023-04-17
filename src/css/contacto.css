@@ -1,5 +1,5 @@
 .redes{
-    height:500px;
+    height:900px;
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -15,6 +15,9 @@ h3{
     gap: 10px;
     width: 50%;
 }
+.qrs{
+    border-radius: 15px;
+}
 .qr img {
     width: 200px;
     height: 200px;
@@ -24,8 +27,10 @@ h3{
 }
 .mapa{
     width: 100%;
-    height: 300px;
+    height: 500px;
     margin-top: 30px;
+    border-radius: 15px;
+    
 }
 .clean{
     margin:25px;
@@ -56,6 +61,7 @@ h3{
         width: 100%;
         max-width: 768px;
         display: flex;
+        border-radius: 5%;
     }
     .qr img{
         margin: auto;
@@ -66,6 +72,7 @@ h3{
         width: 100%;
         max-width: 768px;
         min-height: 600px;
+        border-radius: 10px;
     }
 }
 @media only screen and (max-width: 413px){
@@ -86,6 +93,7 @@ h3{
         width: 100%;
         height: auto;
     }
+    
     .mapa{
         height:400px
     }

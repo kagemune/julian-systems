@@ -41,7 +41,7 @@ function Navbar() {
             <div className='lang'>
                 <ul className={vis}>
                     <li className="menu"><a href="#inicio">Inicio</a></li>
-                    <li className="menu"><a href="#blog">Blog</a></li>
+                    {/* <li className="menu"><a href="#blog">Blog</a></li> */}
                     <li className="menu"><a href="#contacto">Contacto</a></li>
                     <li className="menu"><a href="#servicios">Servicios</a></li>
                 </ul>

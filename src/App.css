@@ -9,6 +9,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .App {
   text-align: center;
@@ -87,6 +89,7 @@ p{
     max-width: 821px;
     width:100%;
     margin-left: auto;
+    margin-top: 10px;
   }
   .aside{
     display: none;
@@ -102,6 +105,10 @@ p{
   
 }
 @media only screen and (max-width: 413px){
+  
+  *{
+    font-size: 1.05rem;
+  }
   p{
     padding: 0 5px;
   }
@@ -109,5 +116,6 @@ p{
     max-width: 412px;
     width:100%;
     margin: 0;
+    margin-top: 15px;
   }
 }

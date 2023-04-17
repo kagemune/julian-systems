@@ -23,6 +23,7 @@
 .presentacion h2{
     color: var(--principal-color);
     font-size: 52px;
+    margin-left: 50px;
 }
 @media only screen and (max-width: 1200px){
     .presentacion {

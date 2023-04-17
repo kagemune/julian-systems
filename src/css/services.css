@@ -19,15 +19,21 @@
     position: absolute;
     left: 30px;
     top: 15px;
+    border: 15px #4b4a4a solid;
+    width: 300px;
+    height: 300px;
 }
 
 .cajaservicios .description{
     /* border: solid black 1px; */
     width: 60%;
     padding: 40px;
+
 }
 .cajaservicios .description h1{
-    margin-bottom: 35px;
+    color: var(--primary-fondcolor);
+    font-size: 35px ;
+    margin: 35px 50px;
     font-weight: bolder;
 }
 .izq{
@@ -43,8 +49,8 @@
 }
 .izq .image .cuadrado{
     position: absolute;
-    left: -280px;
-    top: 15px;
+    left: -320px;
+    top: 30px;
 }
 @media only screen and (max-width: 768px ){
     body{
